@@ -1,0 +1,144 @@
+# Project
+DisableFormat: false
+Language: Cpp
+Standard: c++17
+ColumnLimit: 120
+
+# Indentation
+UseTab: Never
+TabWidth: 4
+AccessModifierOffset: -4
+
+IndentCaseLabels: true
+IndentGotoLabels: false
+IndentPPDirectives: None
+IndentWidth: 4
+IndentWrappedFunctionNames: false
+ContinuationIndentWidth: 0
+
+# Braces
+BreakBeforeBraces: Custom
+BraceWrapping:
+    AfterCaseLabel: true
+    AfterClass: true
+    AfterControlStatement: true
+    AfterEnum: true
+    AfterExternBlock: true
+    AfterFunction: true
+    AfterNamespace: true
+    AfterObjCDeclaration: true
+    AfterStruct: true
+    AfterUnion: true
+    BeforeCatch: true
+    BeforeElse: true
+    IndentBraces: false
+    SplitEmptyFunction: true
+    SplitEmptyNamespace: true
+    SplitEmptyRecord: true
+
+# Alignment
+AlignAfterOpenBracket: Align
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true
+AlignConsecutiveMacros: false
+AlignEscapedNewlines: Left
+AlignOperands: false
+AlignTrailingComments: true
+
+# Allow
+AllowAllArgumentsOnNextLine: false
+AllowAllConstructorInitializersOnNextLine: false
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowShortBlocksOnASingleLine: Never
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLambdasOnASingleLine: None
+AllowShortLoopsOnASingleLine: false
+
+# Break
+AlwaysBreakAfterDefinitionReturnType: None
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: true
+AlwaysBreakTemplateDeclarations: Yes
+BreakAfterJavaFieldAnnotations: true
+BreakBeforeBinaryOperators: None
+BreakBeforeInheritanceComma: true
+BreakBeforeTernaryOperators: false
+BreakConstructorInitializers: AfterColon
+BreakConstructorInitializersBeforeComma: false
+BreakInheritanceList: AfterColon
+BreakStringLiterals: true
+
+# Penalties
+PenaltyBreakAssignment: 1000
+PenaltyBreakBeforeFirstCallParameter: 1000
+PenaltyBreakComment: 200
+PenaltyBreakFirstLessLess: 100
+PenaltyBreakString: 1
+PenaltyBreakTemplateDeclaration: 99999
+PenaltyExcessCharacter: 10
+PenaltyReturnTypeOnItsOwnLine: 100
+
+# Spaces
+SpaceAfterCStyleCast: true
+SpaceAfterLogicalNot: false
+SpaceAfterTemplateKeyword: true
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCpp11BracedList: false
+SpaceBeforeCtorInitializerColon: true
+SpaceBeforeInheritanceColon: true
+SpaceBeforeParens: ControlStatements
+SpaceBeforeRangeBasedForLoopColon: true
+SpaceBeforeSquareBrackets: false
+SpaceInEmptyBlock: true
+SpaceInEmptyParentheses: false
+SpacesBeforeTrailingComments: 1
+SpacesInAngles: false
+SpacesInCStyleCastParentheses: false
+SpacesInConditionalStatement: false
+SpacesInContainerLiterals: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+
+# Sorting
+IncludeBlocks: Regroup
+SortIncludes: true
+SortUsingDeclarations: true
+
+# Initializers & arguments
+BinPackArguments: true
+BinPackParameters: false
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+ConstructorInitializerIndentWidth: 0
+Cpp11BracedListStyle: true
+
+# Line endings
+UseCRLF: false
+
+# Pointer alignment
+PointerAlignment: Left
+
+# Derive
+ExperimentalAutoDetectBinPacking: false
+DerivePointerAlignment: false
+DeriveLineEnding: false
+
+# Namespaces
+FixNamespaceComments: true
+CompactNamespaces: false
+
+NamespaceIndentation: None
+
+# Empty lines
+KeepEmptyLinesAtTheStartOfBlocks: true
+MaxEmptyLinesToKeep: 2
+
+# ObjC
+ObjCBinPackProtocolList: Auto
+ObjCBlockIndentWidth: 4
+ObjCSpaceAfterProperty: false
+ObjCSpaceBeforeProtocolList: true
+
+# Comments
+ReflowComments: false
