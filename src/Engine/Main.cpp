@@ -2,6 +2,7 @@
 
 int main()
 {
-    Engine engine; 
+    Engine engine;
+    engine.init();
     engine.run();
 }

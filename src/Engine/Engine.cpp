@@ -1,11 +1,16 @@
 #include "Engine.hpp"
 
-Engine::Engine() : m_window(sf::VideoMode(200, 200), "Engine")
+Engine::Engine()
 {
 }
 
 Engine::~Engine()
 {
+}
+
+void Engine::init()
+{
+    m_window.create(sf::VideoMode(200, 200), "Engine");
 }
 
 void Engine::run()
