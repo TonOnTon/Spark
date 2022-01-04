@@ -1,13 +1,13 @@
-project(Game)
+project(Engine)
 
-set(INCROOT ${CMAKE_SOURCE_DIR}/include/Game)
-set(SRCROOT ${CMAKE_SOURCE_DIR}/src/Game)
+set(INCROOT ${CMAKE_SOURCE_DIR}/include/${PROJECT_NAME})
+set(SRCROOT ${CMAKE_SOURCE_DIR}/src/${PROJECT_NAME})
 
 set(SRC 
     ${SRCROOT}/Main.cpp
     
-    ${INCROOT}/Game.hpp
-    ${SRCROOT}/Game.cpp
+    ${INCROOT}/Engine.hpp
+    ${SRCROOT}/Engine.cpp
 )
 
 add_executable(${PROJECT_NAME} ${SRC})
