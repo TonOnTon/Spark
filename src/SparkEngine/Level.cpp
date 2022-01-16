@@ -1,5 +1,7 @@
 #include "Level.hpp"
 
+#include "Object.hpp"
+
 Level::Level()
 {
 }

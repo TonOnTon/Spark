@@ -1,11 +1,11 @@
 #pragma once
 
-#include <SFML/Graphics.hpp>
+#include "World.hpp"
 
 class Engine
 {
 public:
-    Engine();
+    Engine(class World& world);
     ~Engine();
 
     void init();
@@ -22,5 +22,5 @@ private:
     void draw();
 
 private:
-    class World* m_world = nullptr;
+    World m_world;
 };

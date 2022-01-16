@@ -1,6 +1,5 @@
 #include "World.hpp"
 
-#include "Level.hpp"
 
 World::World()
 {
@@ -8,16 +7,14 @@ World::World()
 
 World::~World()
 {
-    delete m_level;
 }
 
 void World::init()
 {
     if (!m_level)
-    {
-        m_level = new Level();
-        m_level->init();
-    }
+        m_level = &m_defaultLevel;
+
+    m_level->init();
 }
 
 void World::handleEvent(sf::Event& event)
