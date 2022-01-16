@@ -5,7 +5,7 @@
 class Engine
 {
 public:
-    Engine(class World& world);
+    Engine(World* world);
     ~Engine();
 
     void init();
@@ -22,5 +22,5 @@ private:
     void draw();
 
 private:
-    World m_world;
+    World* m_world;
 };
