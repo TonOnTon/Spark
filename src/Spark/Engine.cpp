@@ -1,16 +1,26 @@
 #include "Engine.hpp"
 
+#include "World.hpp"
+
 Engine::Engine()
 {
 }
 
 Engine::~Engine()
 {
+    delete m_world;
 }
 
 void Engine::init()
 {
     m_window.create(sf::VideoMode(200, 200), "Engine");
+    m_window.setFramerateLimit(144);
+
+    if (!m_world)
+    {
+        m_world = new World();
+        m_world->init();
+    }
 }
 
 void Engine::run()
@@ -32,16 +42,21 @@ void Engine::handleEvent()
     {
         if (event.type == sf::Event::EventType::Closed)
             m_window.close();
+
+        m_world->handleEvent(event);
     }
 }
 
 void Engine::update()
 {
+    m_world->update(m_dt.asSeconds());
 }
 
 void Engine::draw()
 {
     m_window.clear();
+
+    m_world->draw(m_window, sf::RenderStates());
 
     m_window.display();
 }

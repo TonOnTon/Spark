@@ -20,4 +20,7 @@ private:
     void handleEvent();
     void update();
     void draw();
+
+private:
+    class World* m_world = nullptr;
 };
