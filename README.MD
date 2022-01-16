@@ -1,4 +1,9 @@
-# Spark
+# SparkEngine
+
+## Clone 
+```
+git clone --recurse-submodules https://github.com/TonOnTon/SparkEngine.git
+```
 
 ## Dependencies
 

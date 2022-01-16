@@ -16,7 +16,7 @@ set(SRC
     ${SRCROOT}/Level.cpp
 )
 
-add_library(${PROJECT_NAME} SHARED ${SRC})
+add_library(${PROJECT_NAME} STATIC ${SRC})
 target_include_directories(${PROJECT_NAME} PUBLIC ${INCROOT})
 
 target_link_libraries(${PROJECT_NAME} PUBLIC sfml-system sfml-window sfml-graphics sfml-audio sfml-network)
