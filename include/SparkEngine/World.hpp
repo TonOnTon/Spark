@@ -19,6 +19,6 @@ public:
     virtual void update(float dt);
     virtual void draw(sf::RenderTarget& target, sf::RenderStates states);
 
-private:
+protected:
     class Level* m_level = nullptr;
 };
