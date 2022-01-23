@@ -25,7 +25,7 @@ public:
 
         {
             std::unique_lock<std::mutex>(m_mutex);
-            
+
             m_tasks.emplace([task]() {
                 (*task)();
             });

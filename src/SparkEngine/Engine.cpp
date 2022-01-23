@@ -2,7 +2,7 @@
 
 #include "World.hpp"
 
-Engine::Engine(World* world) : m_world(world)
+Engine::Engine(World& world) : m_world(&world)
 {
 }
 

@@ -1,5 +1,8 @@
 #include "World.hpp"
 
+#include "Level.hpp"
+
+#include <cassert>
 
 World::World()
 {
@@ -11,9 +14,7 @@ World::~World()
 
 void World::init()
 {
-    if (!m_level)
-        m_level = &m_defaultLevel;
-
+    assert(m_level, "No level");
     m_level->init();
 }
 

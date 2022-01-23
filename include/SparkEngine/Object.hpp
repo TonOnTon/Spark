@@ -1,6 +1,13 @@
 #pragma once
 
-#include <SFML/Graphics.hpp>
+#include <SFML/Graphics/RenderStates.hpp>
+#include <SFML/Graphics/Transformable.hpp>
+
+namespace sf
+{
+class Event;
+class RenderTarget;
+} // namespace sf
 
 class Object : public sf::Transformable
 {
