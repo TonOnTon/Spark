@@ -1,8 +1,13 @@
 #include "Engine.hpp"
 
 #include "World.hpp"
+#include "Camera.hpp"
 
-Engine::Engine(World& world) : m_world(&world)
+#include <cassert>
+
+Engine g_engine;
+
+Engine::Engine()
 {
 }
 
@@ -12,6 +17,9 @@ Engine::~Engine()
 
 void Engine::init()
 {
+    assert(m_world, "set world");
+    assert(m_camera, "set camera");
+
     m_window.create(sf::VideoMode(200, 200), "Engine");
     m_window.setFramerateLimit(144);
 
@@ -50,6 +58,8 @@ void Engine::update()
 void Engine::draw()
 {
     m_window.clear();
+
+    m_window.setView(m_camera->getView());
 
     m_world->draw(m_window, sf::RenderStates());
 

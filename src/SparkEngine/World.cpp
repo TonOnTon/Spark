@@ -15,6 +15,7 @@ World::~World()
 void World::init()
 {
     assert(m_level, "No level");
+
     m_level->init();
 }
 

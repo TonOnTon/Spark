@@ -14,6 +14,11 @@ set(SRC
     ${SRCROOT}/World.cpp
     ${INCROOT}/Level.hpp 
     ${SRCROOT}/Level.cpp
+
+    ${INCROOT}/Camera.hpp
+    ${SRCROOT}/Camera.cpp
+    ${INCROOT}/TileMap.hpp
+    ${SRCROOT}/TileMap.cpp
 )
 
 add_library(${PROJECT_NAME} STATIC ${SRC})

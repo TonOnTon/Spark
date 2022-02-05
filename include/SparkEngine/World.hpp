@@ -1,24 +1,31 @@
 #pragma once
 
-#include <SFML/Graphics/RenderStates.hpp>
+#include "Object.hpp"
 
-namespace sf
-{
-class Event;
-class RenderTarget;
-} // namespace sf
+class Level;
 
-class World
+class World : public Object
 {
 public:
     World();
     ~World();
 
-    virtual void init();
-    virtual void handleEvent(sf::Event& event);
-    virtual void update(float dt);
-    virtual void draw(sf::RenderTarget& target, sf::RenderStates states);
+    virtual void init() override;
+    virtual void handleEvent(sf::Event& event) override;
+    virtual void update(float dt) override;
+    virtual void draw(sf::RenderTarget& target, sf::RenderStates states) override;
 
 protected:
-    class Level* m_level = nullptr;
+    Level* m_level = nullptr;
+
+public:
+    inline Level* getLevel() const
+    {
+        return m_level;
+    }
+
+    inline void setLevel(Level* level)
+    {
+        m_level = level;
+    }
 };
